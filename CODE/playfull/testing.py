@@ -1,3 +1,4 @@
-import numpy as np
-data = np.array([1,2,3])
-print(data)
+d = {}
+d["m"] = 1
+d["n"] = 2
+print(d)
