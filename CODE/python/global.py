@@ -1,9 +1,9 @@
-def spam():
-    global eggs   #this global call makes the egg variable global so whenever this function is called
-                  #the var eggs is stored in memory 
-    eggs = 'spam'
+def odds(start=1):
+    ''' return all odd numbers from start upwards'''
+    if int(start) % 2 == 0: start = int(start) + 1
+    while True:
+        yield start
+        start += 2
 
-eggs = 'global'
-print(eggs)
-spam()
-print(eggs)
+for l in odds():
+    print(l)
